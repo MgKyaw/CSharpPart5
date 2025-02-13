@@ -26,30 +26,7 @@ Console.WriteLine("Enter current GMT");
 int currentGMT = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Current Medicine Schedule:");
-
-/* Format and display medicine times */
-foreach (int val in times)
-{
-    string time = val.ToString();
-    int len = time.Length;
-
-    if (len >= 3)
-    {
-        time = time.Insert(len - 2, ":");
-    }
-    else if (len == 2)
-    {
-        time = time.Insert(0, "0:");
-    }
-    else
-    {
-        time = time.Insert(0, "0:0");
-    }
-
-    Console.WriteLine($"{time}");
-}
-
-Console.WriteLine();
+DisplayTimes();
 
 Console.WriteLine("Enter new GMT");
 int newGMT = Convert.ToInt32(Console.ReadLine());
