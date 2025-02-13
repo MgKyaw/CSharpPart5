@@ -1,4 +1,7 @@
-﻿void DisplayRandomNumbers()
+﻿Console.WriteLine("Generating random numbers:");
+DisplayRandomNumbers();
+
+void DisplayRandomNumbers()
 {
     Random random = new Random();
 
