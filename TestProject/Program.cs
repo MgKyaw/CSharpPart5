@@ -1,14 +1,16 @@
-﻿Console.WriteLine("Generating random numbers:");
-DisplayRandomNumbers();
+﻿// // Unit 3
 
-void DisplayRandomNumbers()
-{
-    Random random = new Random();
+// Console.WriteLine("Generating random numbers:");
+// DisplayRandomNumbers();
 
-    for (int i = 0; i < 5; i++)
-    {
-        Console.WriteLine($"{random.Next(1, 100)} ");
-    }
+// void DisplayRandomNumbers()
+// {
+//     Random random = new Random();
 
-    Console.WriteLine();
-}
+//     for (int i = 0; i < 5; i++)
+//     {
+//         Console.WriteLine($"{random.Next(1, 100)} ");
+//     }
+
+//     Console.WriteLine();
+// }
