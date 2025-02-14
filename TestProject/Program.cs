@@ -54,7 +54,7 @@ else
 Console.WriteLine("New Medicine Schedule:");
 DisplayTimes();
 
-if (ValidateLength() && ValidateZeroes() && ValidateRange()) 
+if (validength && validateZeroes && ValidateRange()) 
 {
     Console.WriteLine($"ip is a valid IPv4 address");
 } 
