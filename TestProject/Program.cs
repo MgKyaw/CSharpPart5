@@ -49,6 +49,15 @@ else
 Console.WriteLine("New Medicine Schedule:");
 DisplayTimes();
 
+if (ValidateLength() && ValidateZeroes() && ValidateRange()) 
+{
+    Console.WriteLine($"ip is a valid IPv4 address");
+} 
+else 
+{
+    Console.WriteLine($"ip is an invalid IPv4 address");
+}
+
 void DisplayTimes()
 {
     /* Format and display medicine times */
@@ -84,3 +93,7 @@ void AdjustTimes()
         times[i] = ((times[i] + diff)) % 2400;
     }
 }
+
+void ValidateLength() {}
+void ValidateZeroes() {}
+void ValidateRange() {}
