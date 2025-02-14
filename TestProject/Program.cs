@@ -19,6 +19,11 @@
 
 using System;
 
+string ipv4Input = "107.31.1.5";
+bool validLength = false;
+bool validZeroes = false;
+bool validRange = false;
+
 int[] times = { 800, 1200, 1600, 2000 };
 int diff = 0;
 
@@ -141,3 +146,4 @@ else
 {
     Console.WriteLine($"ip is an invalid IPv4 address");
 }
+
