@@ -101,6 +101,25 @@ string[] address;
 bool validLength = false;
 bool validZeroes = false;
 bool validRange = false;
+
+foreach (string ip in ipv4Input) 
+{
+    address = ip.Split(".", StringSplitOptions.RemoveEmptyEntries);
+    
+    ValidateLength(); 
+    ValidateZeroes(); 
+    ValidateRange();
+
+    if (validLength && validZeroes && validRange) 
+    {
+        Console.WriteLine($"{ip} is a valid IPv4 address");
+    } 
+    else 
+    {
+        Console.WriteLine($"{ip} is an invalid IPv4 address");
+    }
+}
+
 void ValidateLength()
 {
     validLength = address.Length == 4;
@@ -132,22 +151,4 @@ void ValidateRange()
         }
     }
     validRange = true;
-}
-
-foreach (string ip in ipv4Input) 
-{
-    address = ip.Split(".", StringSplitOptions.RemoveEmptyEntries);
-    
-    ValidateLength(); 
-    ValidateZeroes(); 
-    ValidateRange();
-
-    if (validLength && validZeroes && validRange) 
-    {
-        Console.WriteLine($"{ip} is a valid IPv4 address");
-    } 
-    else 
-    {
-        Console.WriteLine($"{ip} is an invalid IPv4 address");
-    }
 }
