@@ -17,14 +17,6 @@
 
 // Unit 4
 
-using System;
-
-string[] ipv4Input = {"107.31.1.5", "255.0.0.255", "555..0.555", "255...255"};
-string[] address;
-bool validLength = false;
-bool validZeroes = false;
-bool validRange = false;
-
 // int[] times = { 800, 1200, 1600, 2000 };
 // int diff = 0;
 
@@ -100,6 +92,15 @@ bool validRange = false;
 //     }
 // }
 
+// Unit 5
+
+using System;
+
+string[] ipv4Input = {"107.31.1.5", "255.0.0.255", "555..0.555", "255...255"};
+string[] address;
+bool validLength = false;
+bool validZeroes = false;
+bool validRange = false;
 void ValidateLength()
 {
     validLength = address.Length == 4;
