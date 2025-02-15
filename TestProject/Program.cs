@@ -107,8 +107,6 @@ void ValidateLength()
 
 void ValidateZeroes()
 {
-    string[] address = ipv4Input.Split(".");
-
     foreach (string number in address)
     {
         if (number.Length > 1 && number.StartsWith("0"))
@@ -123,8 +121,6 @@ void ValidateZeroes()
 
 void ValidateRange()
 {
-    string[] address = ipv4Input.Split(".", StringSplitOptions.RemoveEmptyEntries);
-
     foreach (string number in address)
     {
         int value = int.Parse(number);
@@ -136,9 +132,6 @@ void ValidateRange()
     }
     validRange = true;
 }
-
-ValidateZeroes();
-ValidateRange();
 
 if (validLength && validZeroes && validRange)
 {
