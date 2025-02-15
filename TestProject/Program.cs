@@ -54,11 +54,11 @@ else
 Console.WriteLine("New Medicine Schedule:");
 DisplayTimes();
 
-if (validLength && validZeroes && validRange) 
+if (validLength && validZeroes && validRange)
 {
     Console.WriteLine($"ip is a valid IPv4 address");
-} 
-else 
+}
+else
 {
     Console.WriteLine($"ip is an invalid IPv4 address");
 }
@@ -99,49 +99,51 @@ void AdjustTimes()
     }
 }
 
-void ValidateLength() {
+void ValidateLength()
+{
     string[] address = ipv4Input.Split(".");
     validLength = address.Length == 4;
 }
 
-void ValidateZeroes() 
+void ValidateZeroes()
 {
     string[] address = ipv4Input.Split(".");
 
-    foreach (string number in address) 
+    foreach (string number in address)
     {
-        if (number.Length > 1 && number.StartsWith("0")) 
+        if (number.Length > 1 && number.StartsWith("0"))
         {
             validZeroes = false;
+            return;
         }
     }
 
     validZeroes = true;
 }
 
-void ValidateRange() 
+void ValidateRange()
 {
     string[] address = ipv4Input.Split(".", StringSplitOptions.RemoveEmptyEntries);
 
-    foreach (string number in address) 
+    foreach (string number in address)
     {
         int value = int.Parse(number);
-        if (value < 0 || value > 255) 
+        if (value < 0 || value > 255)
         {
             validRange = false;
             return;
         }
     }
     validRange = true;
-} 
+}
 
-ValidateZeroes(); 
+ValidateZeroes();
 ValidateRange();
 
-if (validLength && validZeroes && validRange) 
+if (validLength && validZeroes && validRange)
 {
     Console.WriteLine($"ip is a valid IPv4 address");
-} 
+}
 else
 {
     Console.WriteLine($"ip is an invalid IPv4 address");
