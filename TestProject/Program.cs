@@ -149,3 +149,18 @@ else
     Console.WriteLine($"ip is an invalid IPv4 address");
 }
 
+foreach (string ip in ipv4Input) 
+{
+    ValidateLength(); 
+    ValidateZeroes(); 
+    ValidateRange();
+
+    if (validLength && validZeroes && validRange) 
+    {
+        Console.WriteLine($"{ip} is a valid IPv4 address");
+    } 
+    else 
+    {
+        Console.WriteLine($"{ip} is an invalid IPv4 address");
+    }
+}
