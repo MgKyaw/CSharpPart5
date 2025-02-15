@@ -134,14 +134,14 @@ void ValidateRange()
     validRange = true;
 }
 
-if (validLength && validZeroes && validRange)
-{
-    Console.WriteLine($"ip is a valid IPv4 address");
-}
-else
-{
-    Console.WriteLine($"ip is an invalid IPv4 address");
-}
+// if (validLength && validZeroes && validRange)
+// {
+//     Console.WriteLine($"ip is a valid IPv4 address");
+// }
+// else
+// {
+//     Console.WriteLine($"ip is an invalid IPv4 address");
+// }
 
 foreach (string ip in ipv4Input) 
 {
