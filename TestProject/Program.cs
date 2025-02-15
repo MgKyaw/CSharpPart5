@@ -25,80 +25,80 @@ bool validLength = false;
 bool validZeroes = false;
 bool validRange = false;
 
-int[] times = { 800, 1200, 1600, 2000 };
-int diff = 0;
+// int[] times = { 800, 1200, 1600, 2000 };
+// int diff = 0;
 
-Console.WriteLine("Enter current GMT");
-int currentGMT = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter current GMT");
+// int currentGMT = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Current Medicine Schedule:");
-DisplayTimes();
+// Console.WriteLine("Current Medicine Schedule:");
+// DisplayTimes();
 
-Console.WriteLine("Enter new GMT");
-int newGMT = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter new GMT");
+// int newGMT = Convert.ToInt32(Console.ReadLine());
 
-if (Math.Abs(newGMT) > 12 || Math.Abs(currentGMT) > 12)
-{
-    Console.WriteLine("Invalid GMT");
-}
-else if (newGMT <= 0 && currentGMT <= 0 || newGMT >= 0 && currentGMT >= 0)
-{
-    diff = 100 * (Math.Abs(newGMT) - Math.Abs(currentGMT));
-    AdjustTimes();
-}
-else
-{
-    diff = 100 * (Math.Abs(newGMT) + Math.Abs(currentGMT));
-    AdjustTimes();
-}
+// if (Math.Abs(newGMT) > 12 || Math.Abs(currentGMT) > 12)
+// {
+//     Console.WriteLine("Invalid GMT");
+// }
+// else if (newGMT <= 0 && currentGMT <= 0 || newGMT >= 0 && currentGMT >= 0)
+// {
+//     diff = 100 * (Math.Abs(newGMT) - Math.Abs(currentGMT));
+//     AdjustTimes();
+// }
+// else
+// {
+//     diff = 100 * (Math.Abs(newGMT) + Math.Abs(currentGMT));
+//     AdjustTimes();
+// }
 
-Console.WriteLine("New Medicine Schedule:");
-DisplayTimes();
+// Console.WriteLine("New Medicine Schedule:");
+// DisplayTimes();
 
-if (validLength && validZeroes && validRange)
-{
-    Console.WriteLine($"ip is a valid IPv4 address");
-}
-else
-{
-    Console.WriteLine($"ip is an invalid IPv4 address");
-}
+// if (validLength && validZeroes && validRange)
+// {
+//     Console.WriteLine($"ip is a valid IPv4 address");
+// }
+// else
+// {
+//     Console.WriteLine($"ip is an invalid IPv4 address");
+// }
 
-void DisplayTimes()
-{
-    /* Format and display medicine times */
-    foreach (int val in times)
-    {
-        string time = val.ToString();
-        int len = time.Length;
+// void DisplayTimes()
+// {
+//     /* Format and display medicine times */
+//     foreach (int val in times)
+//     {
+//         string time = val.ToString();
+//         int len = time.Length;
 
-        if (len >= 3)
-        {
-            time = time.Insert(len - 2, ":");
-        }
-        else if (len == 2)
-        {
-            time = time.Insert(0, "0:");
-        }
-        else
-        {
-            time = time.Insert(0, "0:0");
-        }
+//         if (len >= 3)
+//         {
+//             time = time.Insert(len - 2, ":");
+//         }
+//         else if (len == 2)
+//         {
+//             time = time.Insert(0, "0:");
+//         }
+//         else
+//         {
+//             time = time.Insert(0, "0:0");
+//         }
 
-        Console.WriteLine($"{time}");
-    }
+//         Console.WriteLine($"{time}");
+//     }
 
-    Console.WriteLine();
-}
+//     Console.WriteLine();
+// }
 
-void AdjustTimes()
-{
-    /* Adjust the times by adding the difference, keeping the value within 24 hours */
-    for (int i = 0; i < times.Length; i++)
-    {
-        times[i] = ((times[i] + diff)) % 2400;
-    }
-}
+// void AdjustTimes()
+// {
+//     /* Adjust the times by adding the difference, keeping the value within 24 hours */
+//     for (int i = 0; i < times.Length; i++)
+//     {
+//         times[i] = ((times[i] + diff)) % 2400;
+//     }
+// }
 
 void ValidateLength()
 {
