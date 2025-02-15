@@ -121,7 +121,7 @@ void ValidateZeroes()
 
 void ValidateRange() 
 {
-    string[] address = ipv4Input.Split(".");
+    string[] address = ipv4Input.Split(".", StringSplitOptions.RemoveEmptyEntries);
 
     foreach (string number in address) 
     {
