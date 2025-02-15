@@ -102,7 +102,6 @@ void AdjustTimes()
 
 void ValidateLength()
 {
-    string[] address = ipv4Input.Split(".");
     validLength = address.Length == 4;
 }
 
