@@ -152,6 +152,8 @@ else
 
 foreach (string ip in ipv4Input) 
 {
+    address = ip.Split(".", StringSplitOptions.RemoveEmptyEntries);
+    
     ValidateLength(); 
     ValidateZeroes(); 
     ValidateRange();
