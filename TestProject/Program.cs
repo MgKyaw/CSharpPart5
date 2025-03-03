@@ -184,4 +184,12 @@ void DisplayAdjustedTimes(int[] times, int currentGMT, int newGMT)
     {
         Console.WriteLine("Invalid GMT");
     }
+    else if (newGMT <= 0 && currentGMT <= 0 || newGMT >= 0 && currentGMT >= 0) 
+    {
+        diff = 100 * (Math.Abs(newGMT) - Math.Abs(currentGMT));
+    } 
+    else 
+    {
+        diff = 100 * (Math.Abs(newGMT) + Math.Abs(currentGMT));
+    }
 }
