@@ -202,16 +202,16 @@
 
 // DisplayAdjustedTimes(schedule, 6, -6);
 
-string[] students = {"Jenna", "Ayesha", "Carlos", "Viktor"};
+// string[] students = {"Jenna", "Ayesha", "Carlos", "Viktor"};
 
-DisplayStudents(students);
-DisplayStudents(new string[] {"Robert","Vanya"});
+// DisplayStudents(students);
+// DisplayStudents(new string[] {"Robert","Vanya"});
 
-void DisplayStudents(string[] students) 
-{
-    foreach (string student in students) 
-    {
-        Console.Write($"{student}, ");
-    }
-    Console.WriteLine();
-}
+// void DisplayStudents(string[] students) 
+// {
+//     foreach (string student in students) 
+//     {
+//         Console.Write($"{student}, ");
+//     }
+//     Console.WriteLine();
+// }
