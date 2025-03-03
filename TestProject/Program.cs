@@ -192,4 +192,10 @@ void DisplayAdjustedTimes(int[] times, int currentGMT, int newGMT)
     {
         diff = 100 * (Math.Abs(newGMT) + Math.Abs(currentGMT));
     }
+
+    for (int i = 0; i < times.Length; i++) 
+    {
+        int newTime = ((times[i] + diff)) % 2400;
+        Console.WriteLine($"{times[i]} -> {newTime}");
+    }
 }
