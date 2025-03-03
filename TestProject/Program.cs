@@ -199,3 +199,5 @@ void DisplayAdjustedTimes(int[] times, int currentGMT, int newGMT)
         Console.WriteLine($"{times[i]} -> {newTime}");
     }
 }
+
+DisplayAdjustedTimes(schedule, 6, -6);
