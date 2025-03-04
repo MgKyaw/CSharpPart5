@@ -217,6 +217,7 @@
 // }
 
 PrintCircleArea(12);
+double circumference = 2 * pi * radius;
 
 void PrintCircleArea(int radius)
 {
