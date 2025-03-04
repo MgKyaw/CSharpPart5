@@ -220,6 +220,15 @@ PrintCircleArea(12);
 //double circumference = 2 * pi * radius;
 
 double pi = 3.14159;
+PrintCircleInfo(12);
+PrintCircleInfo(24);
+
+void PrintCircleInfo(int radius) 
+{
+    Console.WriteLine($"Circle with radius {radius}");
+    PrintCircleArea(radius);
+    PrintCircleCircumference(radius);
+}
 
 void PrintCircleArea(int radius)
 {
