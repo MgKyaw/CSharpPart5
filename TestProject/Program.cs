@@ -326,10 +326,10 @@ void ShowRSVPs()
     }
 }
 
-RSVP("Rebecca", 1, "none", true);
-RSVP("Nadia", 2, "Nuts", true);
-RSVP(name: "Linh", partySize: 2, allergies: "none", inviteOnly: false);
-RSVP("Tony", inviteOnly: true, allergies: "Jackfruit",  partySize: 1);
-RSVP("Noor", 4, "none", false);
+RSVP("Rebecca");
+RSVP("Nadia", 2, "Nuts");
+RSVP(name: "Linh", partySize: 2, inviteOnly: false);
+RSVP("Tony", allergies: "Jackfruit", inviteOnly: true);
+RSVP("Noor", 4, inviteOnly: false);
 RSVP("Jonte", 2, "Stone fruit", false);
 ShowRSVPs();
