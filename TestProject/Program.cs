@@ -358,3 +358,8 @@ for (int i = 0; i < external.GetLength(0); i++)
 {
     // display external email addresses
 }
+
+void DisplayEmailAddress(string firstName, string lastName, string domainName = "contoso.com")
+{
+    System.Console.WriteLine($"{firstName.SubString(0,2).ToLower()}{lastName.ToLower()}@{domainName}");
+}
