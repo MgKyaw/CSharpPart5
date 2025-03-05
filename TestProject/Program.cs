@@ -356,7 +356,7 @@ for (int i = 0; i < corporate.GetLength(0); i++)
 
 for (int i = 0; i < external.GetLength(0); i++) 
 {
-    // display external email addresses
+    DisplayEmailAddress(firstName: external[i, 0], lastName: external[i, 1], externalDomain);
 }
 
 void DisplayEmailAddress(string firstName, string lastName, string domainName = "contoso.com")
