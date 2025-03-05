@@ -361,5 +361,6 @@ for (int i = 0; i < external.GetLength(0); i++)
 
 void DisplayEmailAddress(string firstName, string lastName, string domainName = "contoso.com")
 {
-    System.Console.WriteLine($"{firstName.SubString(0,2).ToLower()}{lastName.ToLower()}@{domainName}");
+    string firstTwo = firstName.Length >= 2 ? firstName.Substring(0, 2) : firstName;
+    System.Console.WriteLine($"{firstTwo?.ToLower()}{lastName.ToLower()}@{domainName}");
 }
