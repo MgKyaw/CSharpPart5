@@ -294,7 +294,7 @@ string[] guestList = {"Rebecca", "Nadia", "Noor", "Jonte"};
 string[] rsvps = new string[10];
 int count = 0;
 
-void RSVP(string name, int partySize, string allergies, bool inviteOnly) 
+void RSVP(string name, int partySize = 1, string allergies = "none", bool inviteOnly = true)
 {
     if (inviteOnly)
     {
