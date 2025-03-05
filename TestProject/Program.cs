@@ -349,18 +349,18 @@ string[,] external =
 
 string externalDomain = "hayworth.com";
 
-for (int i = 0; i < corporate.GetLength(0); i++) 
-{
-    DisplayEmailAddress(firstName: corporate[i, 0], lastName: corporate[i, 1]);
-}
+// for (int i = 0; i < corporate.GetLength(0); i++) 
+// {
+//     DisplayEmailAddress(firstName: corporate[i, 0], lastName: corporate[i, 1]);
+// }
 
-for (int i = 0; i < external.GetLength(0); i++) 
-{
-    DisplayEmailAddress(firstName: external[i, 0], lastName: external[i, 1], externalDomain);
-}
+// for (int i = 0; i < external.GetLength(0); i++) 
+// {
+//     DisplayEmailAddress(firstName: external[i, 0], lastName: external[i, 1], externalDomain);
+// }
 
-void DisplayEmailAddress(string firstName, string lastName, string domainName = "contoso.com")
-{
-    string firstTwo = firstName.Length >= 2 ? firstName.Substring(0, 2) : firstName;
-    System.Console.WriteLine($"{firstTwo?.ToLower()}{lastName.ToLower()}@{domainName}");
-}
+// void DisplayEmailAddress(string firstName, string lastName, string domainName = "contoso.com")
+// {
+//     string firstTwo = firstName.Length >= 2 ? firstName.Substring(0, 2) : firstName;
+//     System.Console.WriteLine($"{firstTwo?.ToLower()}{lastName.ToLower()}@{domainName}");
+// }
