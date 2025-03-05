@@ -351,7 +351,7 @@ string externalDomain = "hayworth.com";
 
 for (int i = 0; i < corporate.GetLength(0); i++) 
 {
-    // display internal email addresses
+    DisplayEmailAddress(firstName: corporate[i, 0], lastName: corporate[i, 1]);
 }
 
 for (int i = 0; i < external.GetLength(0); i++) 
