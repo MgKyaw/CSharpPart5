@@ -14,7 +14,7 @@ if (TotalMeetsMinimum())
     total -= 5.00;
 }
 
-Console.WriteLine($"Total: ${total}");
+Console.WriteLine($"Total: ${FormatDecimal(total)}");
 
 double GetDiscountedPrice(int itemIndex)
 {
