@@ -50,3 +50,12 @@
 //     double rate = 23500;
 //     return vnd / rate;
 // }
+
+// Unit 4
+
+string ReverseWord(string word) 
+{
+    string result = "";
+
+    return result;
+}
