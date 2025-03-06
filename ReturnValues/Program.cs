@@ -62,3 +62,8 @@ string ReverseWord(string word)
     }
     return result;
 }
+
+string input = "snake";
+
+Console.WriteLine(input);
+Console.WriteLine(ReverseWord(input));
