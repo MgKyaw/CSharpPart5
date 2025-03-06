@@ -9,6 +9,11 @@ for (int i = 0; i < items.Length; i++)
     total += GetDiscountedPrice(i);
 }
 
+if (TotalMeetsMinimum())
+{
+    total -= 5.00;
+}
+
 Console.WriteLine($"Total: ${total}");
 
 double GetDiscountedPrice(int itemIndex)
