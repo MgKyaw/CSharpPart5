@@ -11,9 +11,9 @@ double GetDiscountedPrice(int itemIndex)
     return items[itemIndex] * (1 - discounts[itemIndex]);
 }
 
-void TotalMeetsMinimum()
+bool TotalMeetsMinimum()
 {
-    // Check if the total meets the minimum
+    return total >= minimumSpend;
 }
 
 void FormatDecimal(double input)
