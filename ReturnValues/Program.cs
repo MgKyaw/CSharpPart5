@@ -6,9 +6,10 @@ double[] discounts = {0.30, 0.00, 0.10, 0.20, 0.50};
 
 Console.WriteLine($"Total: ${total}");
 
-void GetDiscountedPrice(int itemIndex)
+double GetDiscountedPrice(int itemIndex)
 {
-    // Calculate the discounted price of the item
+    double result = items[itemIndex] * (1 - discounts[itemIndex]);
+    return result;
 }
 
 void TotalMeetsMinimum()
