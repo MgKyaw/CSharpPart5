@@ -16,7 +16,7 @@ bool TotalMeetsMinimum()
     return total >= minimumSpend;
 }
 
-void FormatDecimal(double input)
+string FormatDecimal(double input)
 {
-    // Format the double so only 2 decimal places are displayed
+    return input.ToString().Substring(0, 5);
 }
