@@ -30,3 +30,15 @@
 // {
 //     return input.ToString().Substring(0, 5);
 // }
+
+// Unit 3
+
+double usd = 23.73;
+int vnd = UsdToVnd(usd);
+
+Console.WriteLine($"${usd} USD = ${vnd} VND");
+
+int UsdToVnd(double usd) 
+{
+
+}
