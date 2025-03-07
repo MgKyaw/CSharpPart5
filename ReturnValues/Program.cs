@@ -146,4 +146,5 @@ int[,] TwoCoins(int[] coins, int target)
             }
         }
     }
+    return (count == 0) ? new int[0,0] : result;
 }
