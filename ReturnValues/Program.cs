@@ -67,3 +67,10 @@ string input = "snake";
 
 Console.WriteLine(input);
 Console.WriteLine(ReverseWord(input));
+
+string ReverseSentence(string input) 
+{
+    string result = "";
+
+    return result;
+}
