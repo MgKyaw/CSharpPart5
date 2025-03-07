@@ -63,10 +63,10 @@ string ReverseWord(string word)
     return result;
 }
 
-string input = "snake";
+string input = "there are snakes at the zoo";
 
 Console.WriteLine(input);
-Console.WriteLine(ReverseWord(input));
+Console.WriteLine(ReverseSentence(input));
 
 string ReverseSentence(string input) 
 {
