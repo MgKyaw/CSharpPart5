@@ -73,5 +73,10 @@ string ReverseSentence(string input)
     string result = "";
     string[] words = input.Split(" ");
 
+    foreach(string word in words) 
+    {
+        result += ReverseWord(word) + " ";
+    }
+
     return result;
 }
