@@ -121,7 +121,15 @@ if (result.Length == 0)
 } 
 else 
 {
-    Console.WriteLine($"Change found at positions {result[0]} and {result[1]}");
+    Console.WriteLine("Change found at positions:");
+    for (int i = 0; i < result.GetLength(0); i++) 
+    {
+        if (result[i,0] == -1) 
+        {
+            break;
+        }
+        Console.WriteLine($"{result[i,0]},{result[i,1]}");
+    }
 }
 
 int[,] TwoCoins(int[] coins, int target) 
