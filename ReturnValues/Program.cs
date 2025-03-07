@@ -78,5 +78,5 @@ string ReverseSentence(string input)
         result += ReverseWord(word) + " ";
     }
 
-    return result;
+    return result.Trim();
 }
