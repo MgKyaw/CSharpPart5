@@ -111,6 +111,10 @@
 
 // Unit 6
 
+int target = 60;
+int[] coins = new int[] {5, 5, 50, 25, 25, 10, 5};
+int[] result = TwoCoins(coins, target);
+
 int[] TwoCoins(int[] coins, int target) 
 {
     for (int curr = 0; curr < coins.Length; curr++) 
