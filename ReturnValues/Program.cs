@@ -117,6 +117,10 @@ int[] TwoCoins(int[] coins, int target)
     {
         for (int next = curr + 1; next < coins.Length; next++) 
         {
+            if (coins[curr] + coins[next] == target) 
+            {
+                return new int[]{curr, next};
+            }
 
         }
     }
