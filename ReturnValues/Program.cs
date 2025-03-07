@@ -90,3 +90,8 @@ foreach (string word in words)
 {
     Console.WriteLine($"{word}: {IsPalindrome(word)}");
 }
+
+bool IsPalindrome(string word) 
+{
+    return true;
+}
