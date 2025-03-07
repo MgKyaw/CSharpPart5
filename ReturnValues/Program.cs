@@ -71,6 +71,7 @@ Console.WriteLine(ReverseWord(input));
 string ReverseSentence(string input) 
 {
     string result = "";
+    string[] words = input.Split(" ");
 
     return result;
 }
