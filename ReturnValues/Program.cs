@@ -108,3 +108,10 @@
 
 //     return true;
 // }
+
+// Unit 6
+
+int[] TwoCoins(int[] coins, int target) 
+{
+    return  new int[0];
+}
