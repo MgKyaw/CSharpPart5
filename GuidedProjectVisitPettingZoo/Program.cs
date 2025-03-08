@@ -9,7 +9,7 @@ string[] pettingZoo =
 
 // RandomizeAnimals();
 
-// AssignGroup();
+// var group = AssignGroup();
 
 Console.WriteLine("School A");
 
