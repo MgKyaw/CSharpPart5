@@ -185,3 +185,10 @@ void PlayGame()
     }
 }
 
+void WinOrLose(int target, int roll) 
+{
+    if( roll > target)
+        Console.WriteLine("You win!");
+    else
+        Console.WriteLine("You lose!");
+}
