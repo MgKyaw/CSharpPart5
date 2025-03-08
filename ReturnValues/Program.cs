@@ -157,46 +157,46 @@
 //     return (count == 0) ? new int[0,0] : result;
 // }
 
-// Unit 7
+// // Unit 7
 
-Random random = new Random();
-string y = "y";
+// Random random = new Random();
+// string y = "y";
 
-Console.WriteLine("Would you like to play? (Y/N)");
-if (ShouldPlay()) 
-{
-    PlayGame();
-}
+// Console.WriteLine("Would you like to play? (Y/N)");
+// if (ShouldPlay()) 
+// {
+//     PlayGame();
+// }
 
-void PlayGame() 
-{
-    var play = true;
+// void PlayGame() 
+// {
+//     var play = true;
 
-    while (play) 
-    {
-        var target = random.Next(1, 6);
-        var roll = random.Next(1, 6);
+//     while (play) 
+//     {
+//         var target = random.Next(1, 6);
+//         var roll = random.Next(1, 6);
 
-        Console.WriteLine($"Roll a number greater than {target} to win!");
-        Console.WriteLine($"You rolled a {roll}");
-        Console.WriteLine(WinOrLose(target, roll));
-        Console.WriteLine("\nPlay again? (Y/N)");
+//         Console.WriteLine($"Roll a number greater than {target} to win!");
+//         Console.WriteLine($"You rolled a {roll}");
+//         Console.WriteLine(WinOrLose(target, roll));
+//         Console.WriteLine("\nPlay again? (Y/N)");
 
-        play = ShouldPlay();
-    }
-}
+//         play = ShouldPlay();
+//     }
+// }
 
-bool ShouldPlay()
-{
-    string shouldPlayInput = Console.ReadLine();
+// bool ShouldPlay()
+// {
+//     string shouldPlayInput = Console.ReadLine();
 
-    return shouldPlayInput?.Trim().ToLower() == y;
-}
+//     return shouldPlayInput?.Trim().ToLower() == y;
+// }
 
-string WinOrLose(int target, int roll) 
-{
-    if( roll > target)
-        return "You win!";
+// string WinOrLose(int target, int roll) 
+// {
+//     if( roll > target)
+//         return "You win!";
 
-    return "You lose!";
-}
+//     return "You lose!";
+// }
