@@ -160,6 +160,7 @@
 // Unit 7
 
 Random random = new Random();
+string y = "y";
 
 Console.WriteLine("Would you like to play? (Y/N)");
 if (ShouldPlay()) 
@@ -183,6 +184,13 @@ void PlayGame()
 
         play = ShouldPlay();
     }
+}
+
+bool ShouldPlay()
+{
+    string shouldPlayInput = Console.ReadLine();
+
+    return shouldPlayInput?.Trim().ToLower() == y;
 }
 
 void WinOrLose(int target, int roll) 
