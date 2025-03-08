@@ -14,3 +14,8 @@ string[] pettingZoo =
 Console.WriteLine("School A");
 
 // PrintGroup(group);
+
+void RandomizeAnimals() 
+{
+
+}
