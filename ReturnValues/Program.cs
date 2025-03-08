@@ -174,12 +174,12 @@ void PlayGame()
 
     while (play) 
     {
-        var target;
-        var roll;
+        var target = random.Next(1, 6);
+        var roll = random.Next(1, 6);
 
         Console.WriteLine($"Roll a number greater than {target} to win!");
         Console.WriteLine($"You rolled a {roll}");
-        Console.WriteLine(WinOrLose());
+        Console.WriteLine(WinOrLose(target, roll));
         Console.WriteLine("\nPlay again? (Y/N)");
 
         play = ShouldPlay();
@@ -193,10 +193,10 @@ bool ShouldPlay()
     return shouldPlayInput?.Trim().ToLower() == y;
 }
 
-void WinOrLose(int target, int roll) 
+string WinOrLose(int target, int roll) 
 {
     if( roll > target)
-        Console.WriteLine("You win!");
-    else
-        Console.WriteLine("You lose!");
+        return "You win!";
+
+    return "You lose!";
 }
