@@ -10,3 +10,6 @@ string[] pettingZoo =
 // RandomizeAnimals();
 
 // AssignGroup();
+
+Console.WriteLine("School A");
+
