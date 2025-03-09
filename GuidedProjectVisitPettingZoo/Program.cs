@@ -52,6 +52,7 @@ void RandomizeAnimals()
 string[,] AssignGroup(int groups = 6) 
 {
     string[,] result = new string[groups, pettingZoo.Length/groups];
+    int start = 0;
 
     for (int i = 0; i < groups; i++) 
     {
