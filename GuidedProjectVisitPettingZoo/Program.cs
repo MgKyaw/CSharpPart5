@@ -57,7 +57,7 @@ string[,] AssignGroup(int groups = 6)
     {
         for (int j = 0; j < result.GetLength(1); j++) 
         {
-
+            result[i,j] = pettingZoo[start++];
         }
     }
 
