@@ -36,7 +36,7 @@ void RandomizeAnimals()
 
     for (int i = 0; i < pettingZoo.Length; i++)
     {
-        int r = random.Next(pettingZoo.Length);
+        int r = random.Next(i, pettingZoo.Length);
 
         string temp = pettingZoo[i];
         pettingZoo[i] = pettingZoo[r];
