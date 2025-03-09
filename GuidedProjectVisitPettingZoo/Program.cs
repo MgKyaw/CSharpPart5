@@ -22,7 +22,7 @@ string[] pettingZoo =
     "tortoises",
 };
 
-// RandomizeAnimals();
+RandomizeAnimals();
 
 // string[,] group = AssignGroup();
 
