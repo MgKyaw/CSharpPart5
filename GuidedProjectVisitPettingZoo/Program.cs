@@ -49,7 +49,7 @@ void RandomizeAnimals()
 //     Console.WriteLine(animal);
 // }
 
-string[,] AssignGroup(int groups) 
+string[,] AssignGroup(int groups = 6) 
 {
 
 }
