@@ -43,3 +43,8 @@ void RandomizeAnimals()
         pettingZoo[r] = temp;
     }
 }
+
+foreach(string animal in pettingZoo) 
+{
+    Console.WriteLine(animal);
+}
