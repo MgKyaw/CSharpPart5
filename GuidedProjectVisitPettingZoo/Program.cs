@@ -1,10 +1,25 @@
 ﻿using System;
 
-string[] pettingZoo = 
+string[] pettingZoo =
 {
-    "alpacas", "capybaras", "chickens", "ducks", "emus", "geese", 
-    "goats", "iguanas", "kangaroos", "lemurs", "llamas", "macaws", 
-    "ostriches", "pigs", "ponies", "rabbits", "sheep", "tortoises",
+    "alpacas",
+    "capybaras",
+    "chickens",
+    "ducks",
+    "emus",
+    "geese",
+    "goats",
+    "iguanas",
+    "kangaroos",
+    "lemurs",
+    "llamas",
+    "macaws",
+    "ostriches",
+    "pigs",
+    "ponies",
+    "rabbits",
+    "sheep",
+    "tortoises",
 };
 
 // RandomizeAnimals();
@@ -15,7 +30,12 @@ Console.WriteLine("School A");
 
 // PrintGroup(group);
 
-void RandomizeAnimals() 
+void RandomizeAnimals()
 {
+    int i = 0;
+    int r = 1;
 
+    string temp = pettingZoo[i];
+    pettingZoo[i] = pettingZoo[r];
+    pettingZoo[r] = temp;
 }
