@@ -24,7 +24,7 @@ string[] pettingZoo =
 
 RandomizeAnimals();
 
-// string[,] group = AssignGroup();
+string[,] group = AssignGroup();
 
 Console.WriteLine("School A");
 
