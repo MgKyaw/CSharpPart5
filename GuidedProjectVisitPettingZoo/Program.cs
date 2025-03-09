@@ -32,8 +32,10 @@ Console.WriteLine("School A");
 
 void RandomizeAnimals()
 {
+    Random random = new Random();
+
     int i = 0;
-    int r = 1;
+    int r = random.Next(pettingZoo.Length);
 
     string temp = pettingZoo[i];
     pettingZoo[i] = pettingZoo[r];
