@@ -44,7 +44,7 @@ void RandomizeAnimals()
     }
 }
 
-foreach(string animal in pettingZoo) 
-{
-    Console.WriteLine(animal);
-}
+// foreach(string animal in pettingZoo) 
+// {
+//     Console.WriteLine(animal);
+// }
