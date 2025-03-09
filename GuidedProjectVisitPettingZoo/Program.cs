@@ -64,3 +64,14 @@ string[,] AssignGroup(int groups = 6)
 
     return result;
 }
+
+void PrintGroup(string[,] group)
+{
+    for (int i = 0; i < group.GetLength(0); i++) 
+    {
+        for (int j = 0; j < group.GetLength(1); j++) 
+        {
+            Console.Write($"{group[i,j]}  ");
+        }
+    }
+}
