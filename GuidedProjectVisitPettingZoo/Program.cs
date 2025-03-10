@@ -28,7 +28,7 @@ string[,] group = AssignGroup();
 
 Console.WriteLine("School A");
 
-// PrintGroup(group);
+PrintGroup(group);
 
 void RandomizeAnimals()
 {
