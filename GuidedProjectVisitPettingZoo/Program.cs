@@ -22,6 +22,10 @@ string[] pettingZoo =
     "tortoises",
 };
 
+PlanSchoolVisit("School A");
+PlanSchoolVisit("School B", 3);
+PlanSchoolVisit("School C", 2);
+
 void PlanSchoolVisit(string schoolName, int groups = 6)
 {
     RandomizeAnimals();
