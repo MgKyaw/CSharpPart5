@@ -22,6 +22,14 @@ string[] pettingZoo =
     "tortoises",
 };
 
+void PlanSchoolVisit(string schoolName, int groups = 6)
+{
+    RandomizeAnimals();
+    string[,] group = AssignGroup();
+    Console.WriteLine("School A");
+    PrintGroup(group);
+}
+
 RandomizeAnimals();
 
 string[,] group = AssignGroup();
